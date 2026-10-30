@@ -16,7 +16,7 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold gradient-text mb-2">Faheel Hassan</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              MCA Graduate | Full Stack Developer | Data Analyst
+              Data & AI Professional | Machine Learning | MLOps | Data Science
             </p>
           </motion.div>
 

@@ -55,13 +55,15 @@ const Hero = () => {
             >
               <TypeAnimation
                 sequence={[
-                  'MCA Graduate',
+                  'Data & AI Professional',
                   2000,
-                  'Full Stack Developer',
+                  'Machine Learning Engineer',
                   2000,
-                  'Data Analyst',
+                  'AI Training Specialist',
                   2000,
-                  'React.js Expert',
+                  'Data Scientist',
+                  2000,
+                  'MLOps Enthusiast',
                   2000,
                 ]}
                 wrapper="span"
@@ -77,8 +79,7 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
-              Passionate Full Stack Developer and Data Analyst skilled in React.js,
-              Node.js, Python, SQL, Power BI, and AI/ML technologies.
+              Data and AI professional experienced in Machine Learning, Data Science, MLOps, Generative AI evaluation, and data analytics. Focused on building reliable ML workflows and delivering data-driven insights.
             </motion.p>
 
             <motion.div
@@ -181,14 +182,14 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-4 -right-4 px-4 py-2 rounded-xl glass-card text-sm font-semibold text-primary-600 dark:text-primary-400 shadow-lg"
               >
-                React.js
+                Machine Learning
               </motion.div>
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
                 className="absolute -bottom-4 -left-4 px-4 py-2 rounded-xl glass-card text-sm font-semibold text-accent-dark dark:text-accent shadow-lg"
               >
-                Python
+                MLOps & AI
               </motion.div>
             </div>
           </motion.div>

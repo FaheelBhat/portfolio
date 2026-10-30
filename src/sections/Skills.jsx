@@ -1,52 +1,56 @@
 import { motion } from 'framer-motion';
 import {
-  SiReact, SiHtml5, SiJavascript, SiTailwindcss,
-  SiNodedotjs, SiMysql, SiPython, SiGithub
+  SiReact, SiHtml5, SiJavascript, SiNodedotjs, SiMysql,
+  SiPython, SiGithub, SiDocker, SiMlflow, SiFlask, SiFastapi
 } from 'react-icons/si';
-import { FaCss3Alt, FaChartBar, FaBrain, FaFileExcel, FaCode, FaServer, FaDatabase, FaTerminal } from 'react-icons/fa';
-import { FiCode as FiCodeIcon, FiDatabase as FiDbIcon, FiBarChart2, FiTool } from 'react-icons/fi';
+import { FaChartBar, FaBrain, FaFileExcel, FaCode, FaDatabase, FaTerminal, FaUsers, FaAws } from 'react-icons/fa';
+import { FiCode as FiCodeIcon, FiBarChart2, FiCpu, FiTool, FiCheckSquare } from 'react-icons/fi';
 
 const skillCategories = [
   {
-    title: 'Frontend',
-    icon: FiCodeIcon,
-    skills: [
-      { name: 'React.js', icon: SiReact, level: 90, color: '#61DAFB' },
-      { name: 'HTML5', icon: SiHtml5, level: 95, color: '#E34F26' },
-      { name: 'CSS3', icon: FaCss3Alt, level: 90, color: '#1572B6' },
-      { name: 'JavaScript', icon: SiJavascript, level: 88, color: '#F7DF1E' },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, level: 92, color: '#06B6D4' },
-    ],
-  },
-  {
-    title: 'Backend',
-    icon: FiDbIcon,
-    skills: [
-      { name: 'Node.js', icon: SiNodedotjs, level: 85, color: '#339933' },
-      { name: 'Express.js', icon: FaServer, level: 82, color: '#000000' },
-      { name: 'SQL', icon: FaDatabase, level: 88, color: '#003B57' },
-      { name: 'MySQL', icon: SiMysql, level: 85, color: '#4479A1' },
-    ],
-  },
-  {
-    title: 'Data Analytics & AI',
+    title: 'Data Science & AI',
     icon: FiBarChart2,
     skills: [
-      { name: 'Python', icon: SiPython, level: 90, color: '#3776AB' },
-      { name: 'Pandas', icon: FaChartBar, level: 85, color: '#150458' },
-      { name: 'NumPy', icon: FaBrain, level: 82, color: '#013243' },
-      { name: 'Power BI', icon: FaChartBar, level: 88, color: '#F2C811' },
-      { name: 'Machine Learning', icon: FaBrain, level: 78, color: '#F7931E' },
+      { name: 'Machine Learning', icon: FaBrain, level: 90, color: '#F7931E' },
+      { name: 'Scikit-learn', icon: FaBrain, level: 88, color: '#F89939' },
+      { name: 'Power BI & DAX', icon: FaChartBar, level: 88, color: '#F2C811' },
+      { name: 'Pandas & NumPy', icon: FaChartBar, level: 90, color: '#150458' },
+      { name: 'LLM Evaluation & Prompt Eng.', icon: FaBrain, level: 92, color: '#10A37F' },
+      { name: 'EDA & Data Annotation', icon: FiCheckSquare, level: 90, color: '#8B5CF6' },
     ],
   },
   {
-    title: 'Tools',
+    title: 'MLOps & Deployment',
+    icon: FiCpu,
+    skills: [
+      { name: 'Docker', icon: SiDocker, level: 85, color: '#2496ED' },
+      { name: 'MLflow & DVC', icon: SiMlflow, level: 82, color: '#0194E2' },
+      { name: 'GitHub Actions (CI/CD)', icon: SiGithub, level: 84, color: '#2088FF' },
+      { name: 'AWS (Cloud & Deployments)', icon: FaAws, level: 80, color: '#FF9900' },
+      { name: 'Flask / FastAPI', icon: SiFastapi, level: 85, color: '#009688' },
+    ],
+  },
+  {
+    title: 'Programming & Web',
+    icon: FiCodeIcon,
+    skills: [
+      { name: 'Python', icon: SiPython, level: 92, color: '#3776AB' },
+      { name: 'SQL', icon: FaDatabase, level: 88, color: '#003B57' },
+      { name: 'JavaScript', icon: SiJavascript, level: 85, color: '#F7DF1E' },
+      { name: 'React.js', icon: SiReact, level: 85, color: '#61DAFB' },
+      { name: 'Node.js', icon: SiNodedotjs, level: 80, color: '#339933' },
+      { name: 'HTML & CSS', icon: SiHtml5, level: 92, color: '#E34F26' },
+    ],
+  },
+  {
+    title: 'Tools & Soft Skills',
     icon: FiTool,
     skills: [
-      { name: 'GitHub', icon: SiGithub, level: 90, color: '#181717' },
-      { name: 'VS Code', icon: FaCode, level: 92, color: '#007ACC' },
-      { name: 'Jupyter', icon: FaTerminal, level: 85, color: '#F37626' },
-      { name: 'Excel', icon: FaFileExcel, level: 88, color: '#217346' },
+      { name: 'MySQL & Databases', icon: SiMysql, level: 85, color: '#4479A1' },
+      { name: 'GitHub & Git', icon: SiGithub, level: 90, color: '#181717' },
+      { name: 'VS Code & Jupyter Notebook', icon: FaTerminal, level: 92, color: '#F37626' },
+      { name: 'Excel / Power Query', icon: FaFileExcel, level: 88, color: '#217346' },
+      { name: 'Problem-Solving & Teamwork', icon: FaUsers, level: 94, color: '#6366F1' },
     ],
   },
 ];

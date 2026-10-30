@@ -101,12 +101,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">Phone</p>
-                    <a
-                      href="tel:+919541614670"
-                      className="text-gray-900 dark:text-white font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                    >
-                      +91 9541614670
-                    </a>
+                    <div className="flex flex-col">
+                      <a
+                        href="tel:+919541614670"
+                        className="text-gray-900 dark:text-white font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                      >
+                        +91 9541614670
+                      </a>
+                      <a
+                        href="tel:+919103166213"
+                        className="text-gray-900 dark:text-white font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                      >
+                        +91 9103166213
+                      </a>
+                    </div>
                   </div>
                 </div>
 

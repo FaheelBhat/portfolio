@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiExternalLink, FiFilter } from 'react-icons/fi';
-import { SiReact, SiNodedotjs, SiJavascript, SiPython, SiMysql } from 'react-icons/si';
+import { SiReact, SiNodedotjs, SiJavascript, SiPython, SiMysql, SiDocker } from 'react-icons/si';
 import { FaChartBar, FaBrain, FaFileExcel } from 'react-icons/fa';
 
 const techIcons = {
@@ -12,42 +12,48 @@ const techIcons = {
   'Python': SiPython,
   'Power BI': FaChartBar,
   'Pandas': FaChartBar,
+  'NumPy': FaChartBar,
   'DAX': FaChartBar,
+  'Power Query': FaChartBar,
   'Excel': FaFileExcel,
   'Machine Learning': FaBrain,
   'scikit-learn': FaBrain,
+  'Docker': SiDocker,
 };
 
 const projects = [
   {
     id: 1,
-    title: 'Shehjar Restaurant App',
-    description: 'Restaurant ordering and management system with SQL integration and responsive frontend/backend architecture.',
-    tech: ['React.js', 'Node.js', 'SQL', 'JavaScript'],
-    category: 'Full Stack',
-    github: 'https://github.com/FaheelBhat/shehjar-billing-app.git',
+    title: 'Customer Churn Prediction (Ongoing)',
+    description: 'Built a customer churn prediction model using scikit-learn with rigorous data preprocessing, feature engineering, and hyperparameter tuning.',
+    tech: ['Python', 'Machine Learning', 'scikit-learn', 'Pandas'],
+    category: 'AI/ML',
+    github: 'https://github.com/FaheelBhat',
     featured: true,
   },
   {
     id: 2,
     title: 'Spotify Data Analysis',
-    description: 'Data analysis and visualization project using Python and Power BI.',
-    tech: ['Python', 'Power BI', 'Pandas'],
+    description: 'Analyzed Spotify datasets using Python, Pandas, NumPy, Power BI, and Power Query to clean, transform, and uncover key streaming patterns.',
+    tech: ['Python', 'Power BI', 'Pandas', 'NumPy'],
     category: 'Data Analytics',
+    github: 'https://github.com/FaheelBhat',
   },
   {
     id: 3,
     title: 'YouTube Trend Analysis',
-    description: 'Trend analysis dashboard using Power Query and DAX.',
-    tech: ['Power BI', 'DAX', 'Excel'],
+    description: 'Built analytical reports and dashboards exploring YouTube trends with data cleaning, Power Query, DAX calculations, and interactive visualizations.',
+    tech: ['Power BI', 'DAX', 'Power Query', 'Excel'],
     category: 'Data Analytics',
+    github: 'https://github.com/FaheelBhat',
   },
   {
     id: 4,
-    title: 'Churn Prediction ML Project',
-    description: 'Machine learning model for customer churn prediction using scikit-learn.',
-    tech: ['Python', 'Machine Learning', 'scikit-learn'],
-    category: 'AI/ML',
+    title: 'Shehjar Restaurant Management App',
+    description: 'Full-stack restaurant ordering and management application with SQL database integration, dynamic frontend, and backend APIs.',
+    tech: ['React.js', 'Node.js', 'SQL', 'JavaScript'],
+    category: 'Full Stack',
+    github: 'https://github.com/FaheelBhat/shehjar-billing-app.git',
   },
 ];
 

@@ -48,14 +48,22 @@ const Education = () => {
                 <FaGraduationCap size={28} />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  Master of Computer Applications
-                </h3>
+                <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    Bachelor of Computer Applications (BCA)
+                  </h3>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400">
+                    2021 – 2024
+                  </span>
+                </div>
                 <p className="text-lg text-primary-600 dark:text-primary-400 font-medium mb-1">
                   University of Kashmir
                 </p>
+                <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  CGPA / Percentage: <span className="text-primary-600 dark:text-primary-400">74.6%</span>
+                </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  MCA Graduate with specialization in software development and data analytics.
+                  Comprehensive curriculum in computer applications, programming, database management, and software development foundations.
                 </p>
               </div>
             </div>
@@ -75,14 +83,19 @@ const Education = () => {
                 <FiAward size={28} />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  Data Science Certification
-                </h3>
+                <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    Certified in Data Science
+                  </h3>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-accent/10 text-accent dark:text-accent">
+                    2024 – 2025
+                  </span>
+                </div>
                 <p className="text-lg text-accent dark:text-accent font-medium mb-1">
                   ILS Institute
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Certified in Data Science (2024–2025)
+                  Rigorous hands-on training covering Python, SQL, Power BI, and Machine Learning workflows.
                 </p>
               </div>
             </div>

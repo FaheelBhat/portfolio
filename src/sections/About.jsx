@@ -4,30 +4,37 @@ import { FiCode, FiBriefcase, FiAward, FiBookOpen } from 'react-icons/fi';
 
 const stats = [
   { icon: FiCode, label: 'Projects Completed', value: 10, suffix: '+' },
-  { icon: FiBriefcase, label: 'Years Experience', value: 2, suffix: '+' },
-  { icon: FiAward, label: 'Skills Mastered', value: 15, suffix: '+' },
+  { icon: FiBriefcase, label: 'Roles & Internships', value: 3, suffix: '' },
+  { icon: FiAward, label: 'Skills Mastered', value: 20, suffix: '+' },
   { icon: FiBookOpen, label: 'Certifications', value: 1, suffix: '' },
 ];
 
 const experiences = [
   {
-    title: 'Full Stack Developer',
-    company: 'Siffrum Analytics Pvt Ltd',
-    period: '2025 – Present',
+    title: 'Generative AI Evaluator / AI Training Specialist',
+    company: 'Handshake AI & Outlier (Freelance)',
+    period: 'April 2026 – Present',
     icon: FiBriefcase,
   },
   {
-    title: 'Data Analyst Intern',
-    company: 'Kmunotag Pvt Ltd',
-    period: 'Oct 2025 – Dec 2025',
+    title: 'Machine Learning Engineer / Data Scientist',
+    company: 'Siffrum Analytics Pvt Ltd',
+    period: 'January 2026 – June 2026',
+    icon: FiBriefcase,
+  },
+  {
+    title: 'Data Annotation & Analytics Intern',
+    company: 'Kmunotag Pvt Ltd & Databricks',
+    period: 'July 2025 – December 2025',
     icon: FiAward,
   },
 ];
 
 const education = {
-  degree: 'MCA Graduate',
-  university: 'University of Kashmir',
-  certification: 'Certified in Data Science – ILS Institute (2024–2025)',
+  degree: 'Bachelor of Computer Applications (BCA)',
+  university: 'University of Kashmir (2021 – 2024)',
+  grade: 'CGPA / Percentage: 74.6%',
+  certification: 'Certified in Data Science – ILS Institute (2024 – 2025)',
   technologies: 'Python, SQL, Power BI, Machine Learning',
 };
 
@@ -92,10 +99,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              I am an MCA Graduate and Full Stack Developer with experience in frontend and backend
-              development, AI/ML projects, dashboards, and data-driven applications. I specialize in
-              React.js, Node.js, Python, SQL, and Power BI, building responsive applications and
-              scalable solutions.
+              Data and AI professional with experience in Machine Learning, Data Science, MLOps, Generative AI evaluation, and data analytics. Skilled in Python, SQL, Scikit-learn, Pandas, NumPy, Power BI, and machine learning workflows. Hands-on experience with model evaluation, data preprocessing, computer vision annotation, LLM quality assessment, and MLOps tools including Docker, MLflow, DVC, GitHub Actions, and AWS.
             </p>
 
             {/* Stats */}
@@ -173,6 +177,7 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">{education.degree}</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300">{education.university}</p>
+                  <p className="text-xs text-primary-600 dark:text-primary-400 font-medium mt-0.5">{education.grade}</p>
                 </div>
                 <div className="pt-3 border-t border-gray-200 dark:border-dark-700">
                   <p className="text-sm text-primary-600 dark:text-primary-400 font-medium">
